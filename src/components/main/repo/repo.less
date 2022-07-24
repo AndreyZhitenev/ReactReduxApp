@@ -1,8 +1,17 @@
 .repo {
-	border: solid 2px lightgray;
+	border: none;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 15px;
+	background-color: #fafafa;
+	border-radius: 10px;
+	transition: 0.3s all ease-in-out;
+
+	&:hover {
+		box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.03);
+		transition: 0.3s all ease-in-out;
+	}
 
 	&-header {
 		display: flex;
