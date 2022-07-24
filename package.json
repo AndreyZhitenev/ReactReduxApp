@@ -5,18 +5,20 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "webpack-dev-server --open"
+		"deploy": "gh-pages -d dist",
+		"start": "webpack-dev-server --open",
+		"build": "webpack"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AndreyZhitenev/ReactReduxApp.git"
+		"url": "git+https://github.com/twiar/ReactReduxApp.git"
 	},
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/AndreyZhitenev/ReactReduxApp/issues"
+		"url": "https://github.com/twiar/ReactReduxApp/issues"
 	},
-	"homepage": "https://github.com/AndreyZhitenev/ReactReduxApp#readme",
+	"homepage": "https://github.com/twiar/ReactReduxApp#readme",
 	"devDependencies": {
 		"@babel/core": "^7.18.2",
 		"@babel/preset-env": "^7.18.2",
@@ -35,6 +37,7 @@
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",
 		"axios": "^0.27.2",
+		"gh-pages": "^4.0.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-redux": "^8.0.2",
